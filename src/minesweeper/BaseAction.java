@@ -22,7 +22,7 @@ public class BaseAction implements UserAction {
         if (this.logic.shouldBang(x, y)){
             this.board.drawBang();
         }
-        else
+        if (this.logic.finish())
         {
             this.board.drawCongratulate();
         }

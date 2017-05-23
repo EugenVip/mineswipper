@@ -10,9 +10,11 @@ public interface Cell<T> {
 
     boolean isSuggestEmpty();
 
-    void suggectEmpty();
+    void suggestEmpty();
 
-    void suggectBomb();
+    void suggestBomb();
 
-    void draw(T paint, boolean real);
+    //void draw(T paint, boolean real);
+
+    void draw(T paint, boolean real, int xCoord, int yCoord);
 }
